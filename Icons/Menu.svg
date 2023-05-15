@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33">
+<path style="fill:#2b2b2b; stroke:none;" d="M0 0L0 33L32 33L32 0L0 0z"/>
+<path style="fill:#898989; stroke:none;" d="M4 7L5 8L4 7z"/>
+<path style="fill:#cdcdcd; stroke:none;" d="M4 8L4 9C10.853 11.0256 21.147 11.0256 28 9C22.8029 5.06267 10.0713 6.20542 4 8z"/>
+<path style="fill:#898989; stroke:none;" d="M27 7L28 8L27 7M4 9L5 10L4 9M27 9L28 10L27 9M4 15L5 16L4 15z"/>
+<path style="fill:#cdcdcd; stroke:none;" d="M4 16L4 17C10.853 19.0256 21.147 19.0256 28 17C22.8029 13.0627 10.0713 14.2054 4 16z"/>
+<path style="fill:#898989; stroke:none;" d="M27 15L28 16L27 15M4 17L5 18L4 17M27 17L28 18L27 17M4 23L5 24L4 23z"/>
+<path style="fill:#cdcdcd; stroke:none;" d="M4 24L4 25C10.853 27.0256 21.1471 27.0256 28 25C22.8029 21.0627 10.0713 22.2054 4 24z"/>
+<path style="fill:#898989; stroke:none;" d="M27 23L28 24L27 23M4 25L5 26L4 25M27 25L28 26L27 25z"/>
+</svg>

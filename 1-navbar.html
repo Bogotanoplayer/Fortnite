@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    :root{
+        --white: #ffffff;
+        --fntxt: #cccccc;
+        --black: #000000;
+        --fnbox: #2a2a2a;
+        --fnyellow:#f7f756;
+        --sm:1.2em;
+        --md:1.6em;
+        --lg:2em;
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--fnbox)
+    }
+    .nav-left ul,
+    .nav-right ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        font-size: var(--sm);
+        height: 4.5em;
+        margin-left: 2em;
+        gap: 2.5em;
+    }
+    .nav-right ul{
+        gap: 1em;
+    }
+    .nav-left ul a{
+        text-decoration: none;
+        color:var(--fntxt);
+    }
+    .nav-left ul a:hover{
+        border-bottom: 0.5em solid var(--fnyellow);
+        padding-bottom: 1.2em;
+    }
+    .nav-left ,
+    .nav-right {
+        display: flex;
+        align-items: center;  
+    }
+    .yellow-button{
+        background-color: var(--fnyellow);
+        height: 4.5em;
+        padding: 1.5em;
+    }
+    .yellow-button a{
+        color: var(--black);
+        text-decoration: none;
+        font-size: var(--sm);
+    }
+    .nav-right ul li{
+        margin-left: 1em;
+    }
+    .sign-in a{
+        text-decoration: none;
+        color: var(--fntxt);
+        display: flex;
+        align-items: center;
+    }
+</style>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="/"><img src="./Logos/Epic.svg" alt="Epic"></a>
+            <a href="/"><img src="./Logos/Fortnite.svg" alt="Fortnite"></a>
+            <ul>
+                <li> <a href="/">DISCOVER</a> </li>
+                <li> <a href="/">MY LIBRARY</a> </li>
+                <li> <a href="/">CREATE</a> </li>
+                <li> <a href="/">NEWS</a> </li>
+                <li> <a href="/">MORE</a> </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <a href="/"><img src="./Icons/Search.svg" alt="Search"></a>
+                </li>  
+                <li>
+                    <a href="/"><img src="./Icons/Lang.svg" alt="lang"></a>
+                </li> 
+                <li>
+                    
+                </li>
+                <li class="sign-in">
+                    <a href="/"><img src="./Icons/Sign.svg" alt="Sign-in">SIGN IN</a>
+                </li>  
+                <li class="yellow-button">
+                    <a href="/">DOWNLOAD</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

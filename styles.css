@@ -1,0 +1,176 @@
+/* general */
+:root{
+    --white: #ffffff;
+    --fntxt: #cccccc;
+    --black: #000000;
+    --fnbox: #2a2a2a;
+    --fnyellow:#f7f756;
+    --sm:1.2em;
+    --md:1.6em;
+    --lg:2em;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.inactive{
+    display: none;
+}
+
+/* Navbar */
+.burguer-menu{
+    display: none;
+}
+.yellow-phone{
+    display: none;
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: var(--fnbox);
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left ul,
+.nav-right ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: var(--sm);
+    height: 4.5em;
+    gap: 2.5em;
+    margin-left: 2em;
+}
+.nav-right ul{
+    gap: 1em;
+}
+.nav-left ul a{
+    text-decoration: none;
+    color:var(--fntxt);
+    font-weight: 5000;
+}
+.nav-left ul a:hover{
+    color: var(--white);
+    border-bottom: 0.5em solid var(--fnyellow);
+    padding-bottom: 1.2em;
+}
+.nav-more{
+    color: var(--fntxt);
+}
+.nav-more:hover{
+    color: var(--white);
+    cursor:default;
+}
+.nav-search img:hover{
+    width: 5em;
+}
+.imput-search{
+    background-color: var(--fnbox);
+    width: 16em;
+    height: 2.5em;
+    border-radius: 0.2em;
+    font-size: var(--md);
+    font-weight: bold;
+    position: relative;
+    top: -3em;
+    left: 82em;
+}
+.nav-language img:hover{
+    width: 3em;
+}
+.nav-left ,
+.nav-right {
+    display: flex;
+    align-items: center;  
+}
+.yellow-button{
+    background-color: var(--fnyellow);
+    height: 4.5em;
+    padding: 1.5em;
+}
+.yellow-button a{
+    color: var(--black);
+    text-decoration: none;
+    font-size: var(--sm);
+    font-weight: 500 ;
+}
+.nav-right ul li{
+    margin-left: 1em;
+}
+.sign-in a{
+    text-decoration: none;
+    color: var(--fntxt);
+    display: flex;
+    align-items: center;
+}
+
+/* menu del nav More */
+.menu-more
+{
+    background-color: var(--fnbox);
+    width: 11em;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: relative;
+    top: 0.04em;
+    left: 42em;
+}
+.menu-more ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+    padding: 1em 2em 2em 2em;
+}
+.menu-more a{
+    text-decoration: none;
+    color: var(--fntxt);
+}
+
+/* menu del nav Lang */
+.menu-lang{
+    background-color: var(--fnbox);
+    width: 15em;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: relative; 
+    top: 0.04em;
+    right: -126em;
+}
+.menu-lang ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    align-items: center ;
+}
+.menu-lang a{
+    text-decoration: none;
+    color: var(--fntxt);
+}
+
+/* media querys */
+@media(max-width: 912px){
+    .nav-left ul,
+    .nav-search,
+    .nav-language,
+    .sign-in,
+    .yellow-button {
+        display:none;
+    }
+    .burguer-menu{
+        display: block;
+    }
+    .yellow-phone{
+        display:block;
+        width: 9.1em;
+    }
+}

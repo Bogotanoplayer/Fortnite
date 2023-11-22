@@ -8,113 +8,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<style>
-    :root{
-        --white: #ffffff;
-        --fntxt: #cccccc;
-        --black: #000000;
-        --fnbox: #2a2a2a;
-        --fnyellow:#f7f756;
-        --sm:1.2em;
-        --md:1.6em;
-        --lg:2em;
-    }
-    body{
-        font-family: 'Quicksand', sans-serif;
-    }
-    html {
-        font-size: 62.5%;
-    }
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--fnbox)
-    }
-    .nav-left ul,
-    .nav-right ul{
-        display: flex;
-        list-style: none;
-        align-items: center;
-        font-size: var(--sm);
-        height: 4.5em;
-        margin-left: 2em;
-        gap: 2.5em;
-    }
-    .nav-right ul{
-        gap: 1em;
-    }
-    .nav-left ul a{
-        text-decoration: none;
-        color:var(--fntxt);
-    }
-    .nav-left ul a:hover{
-        border-bottom: 0.5em solid var(--fnyellow);
-        padding-bottom: 1.2em;
-    }
-    .nav-left ,
-    .nav-right {
-        display: flex;
-        align-items: center;  
-    }
-    .yellow-button{
-        background-color: var(--fnyellow);
-        height: 4.5em;
-        padding: 1.5em;
-    }
-    .yellow-button a{
-        color: var(--black);
-        text-decoration: none;
-        font-size: var(--sm);
-    }
-    .nav-right ul li{
-        margin-left: 1em;
-    }
-    .sign-in a{
-        text-decoration: none;
-        color: var(--fntxt);
-        display: flex;
-        align-items: center;
-    }
-</style>
+
 <body>
     <nav>
         <div class="nav-left">
-            <a href="/"><img src="./Logos/Epic.svg" alt="Epic"></a>
-            <a href="/"><img src="./Logos/Fortnite.svg" alt="Fortnite"></a>
+
+                <a href="/"><img class="epic" src="./Logos/Epic.svg" alt="Epic"></a>
+                <a href="/"><img class="games" src="./Logos/Fortnite.svg" alt="Fortnite"></a>
+
             <ul>
-                <li> <a href="/">DISCOVER</a> </li>
-                <li> <a href="/">MY LIBRARY</a> </li>
-                <li> <a href="/">CREATE</a> </li>
-                <li> <a href="/">NEWS</a> </li>
-                <li> <a href="/">MORE</a> </li>
+                <li>
+                     <a href="/">DISCOVER</a> 
+                </li>
+
+                <li>
+                     <a href="/">MY LIBRARY</a> 
+                </li>
+
+                <li>
+                     <a href="/">CREATE</a> 
+                </li>
+
+                <li>
+                     <a href="/">NEWS</a>
+                </li>
+                <li class="nav-more">
+                     MORE
+                </li>
             </ul>
         </div>
         <div class="nav-right">
             <ul>
-                <li>
-                    <a href="/"><img src="./Icons/Search.svg" alt="Search"></a>
+                <li class="nav-search">
+                    <img src="./Icons/Search.svg" alt="Search">
                 </li>  
-                <li>
-                    <a href="/"><img src="./Icons/Lang.svg" alt="lang"></a>
+                
+                <li class="nav-language">
+                    <img src="./Icons/Lang.svg" alt="lang">
                 </li> 
-                <li>
-                    
-                </li>
+
                 <li class="sign-in">
                     <a href="/"><img src="./Icons/Sign.svg" alt="Sign-in">SIGN IN</a>
                 </li>  
+
                 <li class="yellow-button">
                     <a href="/">DOWNLOAD</a>
                 </li>
+
+                <li class="yellow-button yellow-phone">
+                    <a href="/">PLAY NOW</a>
+                </li>
             </ul>
+            <img class="burguer-menu" src="./Icons/Menu.svg" alt="menu">
         </div>
     </nav>
+    <div class="menu-more inactive">
+        <ul>
+            <li>
+                <a href=".">BATTLE PASS</a>
+            </li>
+            <li>
+                <a href=".">CREW</a>
+            </li>
+            <li>
+                <a href=".">COMPETITIVE</a>
+            </li>
+            <li>
+                <a href=".">V-BUCKS</a>
+            </li>
+            <li>
+                <a href=".">HELP</a>
+            </li>
+            <li>
+                <a href=".">MOBILE</a>
+            </li>
+        </ul>
+   </div>
+   <div class="menu-lang inactive">
+    <ul>
+        <li>
+            <a href=".">العربية</a>
+        </li>
+        <li>
+            <a href=".">DEUTSCH</a>
+        </li>
+        <li>
+            <a href=".">ESPAÑOL (SPAIN)</a>
+        </li>
+        <li>
+            <a href=".">ESPAÑOL (LA)</a>
+        </li>
+        <li>
+            <a href=".">FRANÇAIS</a>
+        </li>
+        <li>
+            <a href=".">ITALIANO</a>
+        </li>
+        <li>
+            <a href=".">日本語</a>
+        </li>
+        <li>
+            <a href=".">한국어</a>
+        </li>
+        <li>
+            <a href=".">POLSKI</a>
+        </li>
+        <li>
+            <a href=".">PORTUGUÊS (BRASIL)</a>
+        </li>
+        <li>
+            <a href=".">РУССКИЙ</a>
+        </li>
+        <li>
+            <a href=".">TÜRKÇE</a>
+        </li>
+    </ul>
+</div>
+<input class="imput-search inactive" type="text" placeholder="Search...">
 </body>
+<script src="./main.js"></script>
 </html>
